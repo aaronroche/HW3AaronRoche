@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Multiplication Table Generator</title>
+</head>
+<body>
+
+    <div class="container">
+        <form id="multiplicationForm">
+            <label for="startMultiplier">Start Multiplier:</label>
+            <input type="number" id="startMultiplier" required>
+
+            <label for="endMultiplier">End Multiplier:</label>
+            <input type="number" id="endMultiplier" required>
+
+            <label for="startMultiplicand">Start Multiplicand:</label>
+            <input type="number" id="startMultiplicand" required>
+
+            <label for="endMultiplicand">End Multiplicand:</label>
+            <input type="number" id="endMultiplicand" required>
+
+            <button type="button" onclick="generateTable()">Generate Table</button>
+        </form>
+
+        <div id="tableContainer"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
